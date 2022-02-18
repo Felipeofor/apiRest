@@ -1,0 +1,35 @@
+###
+GET http://localhost:9000/api HTTP/1.1
+
+###
+
+GET http://localhost:9000/api/1 HTTP/1.1
+
+###
+POST http://localhost:9000/api HTTP/1.1
+Content-Type: application/json
+
+{
+    "ingreso": 200,
+    "mes": "Enero",
+    "referencia": "Lavarropas",    "referencia": "Vacaciones",
+    "editar": false,
+    "gastosBasicos": 0,
+    "gustosCortoPlazo": 0,
+    "gustosLargoPlazo": 0,
+    "paraTodaLaVida": 0,
+    "sueldoReal": 0
+}
+
+###
+DELETE http://localhost:9000/api/2 HTTP/1.1
+
+###
+PUT http://localhost:9000/api/1 HTTP/1.1
+Content-Type: application/json
+
+{
+    "ingreso": 4000,
+    "mes": "Marzo",
+    "referencia": "Heladera"
+}
