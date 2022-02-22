@@ -28,7 +28,7 @@ routes.get('/:id', (req, res)=>{
 }
 )
 
-routes.post('/calculadoraDeAhorro', (req, res)=>{
+routes.post('/', (req, res)=>{
     req.getConnection((err, conn)=>{
         if(err) return res.send(err)
         conn.query('INSERT INTO ahorro set ?', [req.body], (err, rows)=>{
